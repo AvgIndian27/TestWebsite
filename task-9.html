@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task-9.css">
+    <title>Dynamic store</title>
+</head>
+<body>
+   <!-- Navigation bar container -->
+     <div class="nav-container">
+      <div class="sidebar">
+        <svg onclick=hideSidebar() class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>       
+        <a href="#Home">Home</a>
+        
+        <a class="store" href="#Store">Store</a>
+        <!-- Dropdown for Store -->
+        <div class="dropdown1">
+            <a href="#Games">Games</a>
+            <a href="#unrealengine">UE5</a>
+            <a href="#coupons">Coupons</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+        
+        <a class="lib" href="#Library">Library</a>
+        <!-- Dropdown for Library -->
+        <div class="dropdown2">
+            <a href="#Games">My games</a>
+            <a href="#unrealengine">AAA titles</a>
+            <a href="#coupons">Multiplayer</a>
+            <a href="#feedback">DLCs</a>
+        </div>
+        
+        <a class="contact" href="#Contact">Contact</a>
+        <a href="#About">About</a>
+        </div>
+        <div onclick=showSidebar() onclick=hideSidebar() class="sl-div">
+            <img class="s-logo" src="file.png">
+            </div>
+       <svg onclick=showSidebar() class="hamburger" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='flex'
+                const sldiv = document.querySelector('.sl-div')
+                sldiv.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='none'
+                const sldiv = document.querySelector('.sl-div')
+                sldiv.style.display = 'none'
+            }
+        </script>
+    </div>
+            <!-- Navbar -->
+          <nav class="navbar">
+
+                <img src="file.png">
+                <a href="#Home">Home</a>
+              
+                <a class="store" href="#Store">Store</a>
+                <!-- Dropdown for Store -->
+                <div class="dropdown1">
+                    <a href="#Games">Games</a>
+                    <a href="#unrealengine">UE5</a>
+                    <a href="#coupons">Coupons</a>
+                    <a href="#feedback">Feedback</a>
+                </div>
+                
+                <a class="lib" href="#Library">Library</a>
+                <!-- Dropdown for Library -->
+                <div class="dropdown2">
+                    <a href="#Games">My games</a>
+                    <a href="#unrealengine">AAA titles</a>
+                    <a href="#coupons">Multiplayer</a>
+                    <a href="#feedback">DLCs</a>
+                </div>
+                
+                <a class="contact" href="#Contact">Contact</a>
+                <a href="#About">About</a>
+                
+              </nav>
+            <!-- End of Navbar -->
+
+            
+
+  </div>
+ <!-- End of Navigation bar container -->
+
+ 
+</body>
+</html>
+

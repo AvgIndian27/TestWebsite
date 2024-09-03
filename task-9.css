@@ -160,7 +160,7 @@ a{
     height: 90px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 412px){
     .navbar{
         display: none;
     }

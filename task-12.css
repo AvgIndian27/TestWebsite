@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+body{
+    background-color: #1d1c20;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Overall{
+    margin-top: 10px;
+    background-color: #afafaf;
+    padding: 0 20px 120px 20px;
+    border-radius: 30px;
+}
+.card{
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 0 20px 20px 20px;
+    border: 2px solid #a3a3a3;
+    border-radius: 80px;
+    margin-top: 5px;
+}
+h1{
+    padding-top: 5px;
+    color: white;
+    font-family: cursive;
+    font-variant: small-caps;
+}
+.InputDiv{
+    padding-top: 40px;
+}
+input[type=text]{
+    width: 460px;
+    font-size: 20px;
+    text-align: center;
+    font-family:monospace;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.InputField{
+    padding : 30px 0 30px 0;
+    box-sizing: border-box;
+    border: 1px solid #a49797;
+    border-radius: 60px;
+}
+.AddButton{
+    background-color: #f0bb5a;
+    margin-top: 15px;
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+a{
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.AddButton:hover{
+    background-color: rgb(230, 190, 115);
+    transition: 0.5s;
+}
+.AddButton:active{
+    background-color: #f0bb5a;;
+}
+#para-list{
+    padding: 10px;
+    border:1px solid #847f7f;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #5d566b;
+    width: 470px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1.5px;
+    font-variant: small-caps;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+button:first-child{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d5c559;
+    font-size: large;
+    font-family: monospace;
+}
+input[type="checkbox"] {  
+    transform: scale(2.0); /* Adjust the scale value to increase/decrease size */
+    margin-left: 15px; /* Add spacing between the checkbox and the task text */
+}
+
+@media screen and (max-width:675px) {
+    .card{
+        padding: 0 10px 10px 10px;
+    }
+    input[type=text]{
+        width: 330px;
+    }
+    #para-list{
+        width: 320px;
+    }
+}
